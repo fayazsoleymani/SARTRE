@@ -1,11 +1,6 @@
 # SARTRE
-test 
-
-'''
-part of code
-'''
+test
 ```
 part of code
 ```
-[google.com]([google.com](https://www.google.com/))
 [hello](https://www.google.com/)
