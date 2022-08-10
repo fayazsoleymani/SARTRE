@@ -1,0 +1,7 @@
+sklearn
+imblearn
+rdkit
+Bio
+syipy
+numpy
+gurobipy

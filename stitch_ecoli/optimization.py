@@ -3,7 +3,6 @@ import numpy as np
 import scipy.io as sio
 import gurobipy as gp
 from gurobipy import GRB
-import cobra
 from collections import Counter
 import os
 import time
