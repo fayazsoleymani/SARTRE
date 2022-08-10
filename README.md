@@ -7,4 +7,4 @@ part of code
 ```
 part of code
 ```
-[google.com]
+[google.com](google.com)
