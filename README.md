@@ -7,7 +7,7 @@ SARTRE framework investigates the power of shadow prices which are calculated ba
 Two models have been used in this study. 
 - [iJO1366](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3261703/): A comprehensive genome-scale reconstruction of *Escherichia coli* metabolism
 - [Yeast-GEM](https://github.com/SysBioChalmers/yeast-GEM): A consensus *S. cerevisiae* metabolic model Yeast8 and its ecosystem for comprehensively probing cellular metabolism
-Curation of these mentioned GEMs have been performed by the  COBRAToolbox in MATLAB. `modelPreparing_iJO1366.m` uses `iJO1366.mat` as the input and creates `ModelIrrevOpt90.mat` and  
+Curation of these mentioned GEMs have been performed by the  COBRAToolbox in MATLAB. `modelPreparing_iJO1366.m` uses `iJO1366.mat` as the input and creates `ModelIrrevOpt90.mat` and  `modelPreparing_yeastGEM.m` uses `Yeast-GEM.mat` and creates `yeast_IrrevOpt90.mat`.
 
 ### 2. Calculating shadow prices
 
