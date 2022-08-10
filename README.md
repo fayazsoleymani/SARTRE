@@ -41,7 +41,7 @@ python3 evaluate.py
 Gold standard from STITCH also get an additional argument as confidence score(150: low, 400: medium, 700: high, 900: highest) to perform this process. for example, for `stitch_ecoli` and using medium confidence score:
 ```
 cd stitch_ecoli
-python evaluate.py 400
+python3 evaluate.py 400
 ```
 
 ### 5. Performance of SARTRE on specific tasks 
