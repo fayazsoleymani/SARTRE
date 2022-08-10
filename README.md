@@ -16,7 +16,7 @@ In this study, we employed four gold standards integrated to GEMs as:
 - [stitch_ecoli](http://stitch.embl.de/)
 - [stitch_yeast](http://stitch.embl.de/)
 
-Calculation of shadow prices can be performed in their directory by changing the working directory followed by executing `optimization.py`. For instance, the process for piazza can be done by following commands in the terminal:
+The optimization process has been implemented by [GUROBI](https://www.gurobi.com/) optimizer and its python interface. Make sure to be installed and have an active license for it beforehand. Calculation of shadow prices can be performed in their directory by changing the working directory followed by executing `optimization.py`. For instance, the process for piazza can be done by following commands in the terminal:
 ```
 cd piazza
 python3 optimization.py
