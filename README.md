@@ -5,8 +5,8 @@ SARTRE framework investigates the power of shadow prices which are calculated ba
 
 ### 1. Curating the GEMs:
 Two models have been used in this study. 
-- [iJO1366](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3261703/): A comprehensive genome-scale reconstruction of Escherichia coli metabolism
-- [Yeast-GEM](https://github.com/SysBioChalmers/yeast-GEM): A consensus S. cerevisiae metabolic model Yeast8 and its ecosystem for comprehensively probing cellular metabolism
+- [iJO1366](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3261703/): A comprehensive genome-scale reconstruction of *Escherichia coli* metabolism
+- [Yeast-GEM](https://github.com/SysBioChalmers/yeast-GEM): A consensus *S. cerevisiae* metabolic model Yeast8 and its ecosystem for comprehensively probing cellular metabolism
 
 ### 2. Calculating shadow prices
 
