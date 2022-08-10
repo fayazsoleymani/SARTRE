@@ -33,11 +33,32 @@ python3 generate_fp.py
 `generate_fp.py` prompts you to enter your email for using the [Bio.Entrez](https://biopython.org/docs/1.76/api/Bio.Entrez.html) package. The results will be saved in `met_sps_t80_replaced.csv` and `met_fp128.csv`, respectively.
 
 ### 4. Training classifier and evaluation
+Preprocessing, constructing datasets, training the random forest classifier and evaluating it can be executed by running `evaluate.py` in each gold standard directory. The classifier and metrics are employed from [sklearn](https://scikit-learn.org/stable/) python library. For example, for piazza gold standard the process can be done by executing:
+```
+cd piazza
+python3 evaluate.py
+```
+Gold standard from STITCH also get an additional argument as confidence score(150: low, 400: medium, 700: high, 900: highest) to perform this process. for example, for `stitch_ecoli` and using medium confidence score:
+```
+cd stitch_ecoli
+python evaluate.py 400
+```
 
-### 5. Performance of SARTRE on specific tasks  
+### 5. Performance of SARTRE on specific tasks 
+Additional evaluation has been provided to showcase the power of SARTRE. First, evaluation has been done by excluding shared metabolite-protein pairs, which exist in two GEMs, from the datasets, and training two separate models in remaining pairs. This can be performed by executing:
+```
+cd subsys_shared
+python3 shared.py
+```
+The accuracy of two models on the test set and cosine similarity of predictions to classifiers will be displayed.
+Second, we excluded metabolite-protein pairs of two subsystems of *E. coli* separately from stitch_ecoli and trained two models on remaining pairs. These subsystems are Alternate Carbon Metabolism and Cofactor and Prosthetic Group Biosynthesis. This process can be done by executing:
+```
+cd subsys_shared
+python3 subsys.py acm
+python3 subsys.py cpgb
+```
 
 
+***make sure to unzip 4932.protein_chemical.links.v5.0.zip archive in both stitch_yeast and subsys_shared directories***
 
 
-
-[hello](https://www.google.com/)
