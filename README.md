@@ -33,15 +33,16 @@ python3 generate_fp.py
 `generate_fp.py` prompts you to enter your email for using the [Bio.Entrez](https://biopython.org/docs/1.76/api/Bio.Entrez.html) package. The results will be saved in `met_sps_t80_replaced.csv` and `met_fp128.csv`, respectively.
 
 ### 4. Training classifier and evaluation
-Preprocessing, constructing datasets, training the random forest classifier and evaluating it can be executed by running `evaluate.py` in each gold standard directory. The classifier and metrics are employed from [sklearn](https://scikit-learn.org/stable/) python library. For example, for `piazza` gold standard the process can be done by executing:
+Preprocessing, constructing datasets, training the random forest classifier and evaluating it can be executed by running `evaluate.py` in each gold standard directory. The classifier and metrics are employed from [sklearn](https://scikit-learn.org/stable/) python library. For example, for `piazza` gold standard the process can be done for using shadow prices and fingerprints, respectively, by executing:
 ```
 cd piazza
-python3 evaluate.py
+python3 evaluate.py sp
+python3 evaluate.py fp
 ```
-Gold standard from STITCH also get an additional argument as confidence score(150: low, 400: medium, 700: high, 900: highest) to perform this process. for example, for `stitch_ecoli` and using medium confidence score:
+Gold standard from STITCH also get an additional argument as confidence score(150: low, 400: medium, 700: high, 900: highest) to perform this process. for example, for `stitch_ecoli` and using medium confidence score and shadow price as metabolite features:
 ```
 cd stitch_ecoli
-python3 evaluate.py 400
+python3 evaluate.py sp 400 
 ```
 
 ### 5. Performance of SARTRE on specific tasks 
