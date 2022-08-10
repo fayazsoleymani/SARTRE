@@ -15,16 +15,12 @@ In this study, we employed four gold standards integrated to GEMs as:
 - [reznik](https://pubmed.ncbi.nlm.nih.gov/28903046/)
 - [stitch_ecoli](http://stitch.embl.de/)
 - [stitch_yeast](http://stitch.embl.de/)
-Calculation of shadow prices can be performed in their directory by changing the working directory executing `optimization.py`. For instance, the process for piazza can be done by following commands in the terminal:
+Calculation of shadow prices can be performed in their directory by changing the working directory followed by executing `optimization.py`. For instance, the process for piazza can be done by following commands in the terminal:
 ```
 cd piazza
 python3 optimization.py
 ```
-The results of optimization will be saved on the `opt` directory for each reaction by its number. The process is the same for other gold standards.
-
-
-
-
+The results of optimization will be saved on the `opt` directory for each reaction by its number. The process is the same for other gold standards. Also the results are provided in the .zip archive in their directory.
 ### 3. Data pre-processing
 
 ### 4. Training classifier and evaluation
