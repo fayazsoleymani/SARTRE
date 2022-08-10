@@ -60,6 +60,6 @@ python3 subsys.py cpgb
 ```
 
 
-***MAKE sure to unzip `4932.protein_chemical.links.v5.0.zip archive` in both `stitch_yeast` and `subsys_shared` directories***
+***MAKE sure to unzip `4932.protein_chemical.links.v5.0.zip archive` in both `stitch_yeast` and `subsys_shared` directories.***
 
 
