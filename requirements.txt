@@ -1,4 +1,4 @@
-sklearn
+sklearn==1.0.2
 imblearn
 rdkit
 Bio
