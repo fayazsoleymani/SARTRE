@@ -65,7 +65,8 @@ python3 subsys.py cpgb
 In this analysis SARTRE predictions are compared to computational predictions by [Zhao et al.](https://academic.oup.com/bib/article-abstract/22/5/bbab014/6130169?redirectedFrom=fulltext). The datasets are constructed based on the method for pairs of our datasets and evaluation with 10-fold cross validation is applied. The deep neural network and constructed datasets are available in the comparison folder.
 
 ### 2. Performance of SARTRE in different media compositions
-In this part SARTRE framework is applied to a dataset, which is constructed from the GEM of iJO1366 and the gold standard from STITCH with a medium (400) confidence score. We utilized models with different carbon sources as acetate, fructose, glycerol, mannose, and succinate, and compared metrics with the base model, which was in glucose media composition. For executing the codes, first, change current directory, then run the script with desired setting name, e.g. acetate as below:
+In this part SARTRE framework is applied to a dataset, which is constructed from the GEM of iJO1366 and the gold standard from STITCH with a medium (400) confidence score. We utilized models with different carbon sources as acetate, fructose, glycerol, mannose, and succinate, and compared metrics with the base model, which was in glucose media composition. Also, the code is available for different carbon/nitrogen/phosphorus sources with limiting and non-limiting values. In each directory, the manipulated model, results of optimization and metabolite/protein features are accessible.
+ For executing the codes, first, change current directory, then run the script with desired setting name, e.g. acetate as below:
 
 ```
 cd media_composition
@@ -85,8 +86,16 @@ cd stitch_ecoli
 python3 evaluate_without.py 400
 ```
 
-
-
-
+### 4. Permutation tests:
+We examined the performance of SARTRE with two permutation tests of label permutation and feature permutation. To run the codes, first change directory to each datasets and execute python code permutation_tests.py with two label_permutation/feature_permutation options e.g. for piazza and lable permutation test:
+```
+cd piazza
+python3 permutation_tests.py label_permutation\
+```
+For STITCH derived datasets, run the commands with desired confidence score as a first argument, e.g. stitch_ecoli with medium confidence score(400) and feature permutation test:
+```
+cd stitch_ecoli
+python3 permutation_tests.py 400 feature_permutation\
+```
 
 ***MAKE sure to unzip archives***
