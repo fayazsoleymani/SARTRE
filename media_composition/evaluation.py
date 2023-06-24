@@ -6,29 +6,14 @@ from sklearn.model_selection import cross_validate
 from imblearn.under_sampling import RandomUnderSampler
 from sklearn.ensemble import RandomForestClassifier
 import sys
+import os
 
 
 mc= sys.argv[1]
 cs= 400
-
-if mc == 'acetate':
-    metabolites_features_filename= './acetate/cid_sps_t80_replaced.csv'
-    protein_features_filename= './acetate/gene_in_rxns.csv'
-elif mc == 'fructose':
-    metabolites_features_filename= './fructose/cid_sps_t80_replaced.csv'
-    protein_features_filename= './fructose/gene_in_rxns.csv'
-elif mc == 'glycerol':
-    metabolites_features_filename= './glycerol/cid_sps_t80_replaced.csv'
-    protein_features_filename= './glycerol/gene_in_rxns.csv'
-elif mc == 'mannose':
-    metabolites_features_filename= './mannose/cid_sps_t80_replaced.csv'
-    protein_features_filename= './mannose/gene_in_rxns.csv'
-elif mc == 'succinate':
-    metabolites_features_filename= './succinate/cid_sps_t80_replaced.csv'
-    protein_features_filename= './succinate/gene_in_rxns.csv'
-else:
-    print("invalid media compostion name")
-    sys.exit()
+base_dir= os.getcwd()
+metabolites_features_filename= os.path.join(base_dir, mc, 'cid_sps_t80_replaced.csv')
+protein_features_filename= os.path.join(base_dir, mc, 'gene_in_rxns.csv')
 
 
 
