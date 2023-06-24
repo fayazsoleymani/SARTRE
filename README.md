@@ -90,12 +90,12 @@ python3 evaluate_without.py 400
 We examined the performance of SARTRE with two permutation tests of label permutation and feature permutation. To run the codes, first change directory to each datasets and execute python code permutation_tests.py with two label_permutation/feature_permutation options e.g. for piazza and lable permutation test:
 ```
 cd piazza
-python3 permutation_tests.py label_permutation\
+python3 permutation_tests.py label_permutation
 ```
 For STITCH derived datasets, run the commands with desired confidence score as a first argument, e.g. stitch_ecoli with medium confidence score(400) and feature permutation test:
 ```
 cd stitch_ecoli
-python3 permutation_tests.py 400 feature_permutation\
+python3 permutation_tests.py 400 feature_permutation
 ```
 
 ***MAKE sure to unzip archives***
